@@ -16,7 +16,15 @@ function pressIt() {
     if (key.which == 71)
     alert("You've pushed G!")
   })
-  
+}
+
+function submitIt() {
+  $('form').on('submit', function() {
+    if ($('input:first').val() === 'correct') {
+      alert("Your form is going to be submitted now.");
+      return;
+    }
+  })
 }
 
 
@@ -26,4 +34,5 @@ $(document).ready(function(){
 getIt()
 frameIt()
 pressIt()
+submitIt()
 });
