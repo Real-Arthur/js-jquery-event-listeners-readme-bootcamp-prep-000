@@ -7,7 +7,7 @@ function getIt() {
 
 function frameIt() {
   $('img').on('load', function() {
-    return $('img').bind('.tasty')
+    $('img').bind('.tasty')
   })
 }
 
@@ -15,5 +15,6 @@ function frameIt() {
 $(document).ready(function(){
 
 // call functions here
+getIt()
 frameIt()
 });
